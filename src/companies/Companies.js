@@ -33,7 +33,7 @@ class Companies extends Component {
         <header>API Call</header>
 
       <ul>
-        {(this.state.companies.map((coy, i) => <li key={i}>{coy}</li>))}
+        {this.state.companies.map(post => <li key={post._id}>{post.email}</li>)}
 
       </ul>
 
