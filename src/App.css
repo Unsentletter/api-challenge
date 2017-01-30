@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+header {
+  background-color: #222;
+  height: 50px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 40px;
+}
+
+.table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.data-field {
+  border: 1px solid black;
+  width: 100%;
+  text-align: center;
+}
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: blue;
+}
