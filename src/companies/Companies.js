@@ -32,9 +32,12 @@ class Companies extends Component {
       <div className="App">
         <header>API Call</header>
 
-      <ul>
-        {this.state.companies.map(post => <li key={post._id}>{post.email}</li>)}
-
+      <ul className="table">
+        {this.state.companies.map(post => <li className="data-field" key={post._id}>{post.image}</li>)}
+        {this.state.companies.map(post => <li className="data-field" key={post._id}>{post.display_name}</li>)}
+        {this.state.companies.map(post => <li className="data-field" key={post._id}>{post.phone}</li>)}
+        {this.state.companies.map(post => <li className="data-field" key={post._id}>{post.status}</li>)}
+        {this.state.companies.map(post => <li className="data-field" key={post._id}>{post.address.postcode}</li>)}
       </ul>
 
 
